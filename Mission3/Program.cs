@@ -14,6 +14,7 @@ namespace Mission3
             };
 
             BoardInfo.PrintBoard(gameBoard);
+            Console.WriteLine(BoardInfo.CheckWin(gameBoard));
         }
     }
 }
