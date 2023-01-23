@@ -6,7 +6,14 @@ namespace Mission3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Tic Tac Toe");
+            char[][] gameBoard = new char[][]
+            {
+            new char[] { 'x', 'o', 'o' },
+            new char[] { 'x', 'o', 'o' },
+            new char[] { 'x', 'o', 'o' }
+            };
+
+            BoardInfo.PrintBoard(gameBoard);
         }
     }
 }
