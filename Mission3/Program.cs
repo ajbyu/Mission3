@@ -15,7 +15,7 @@ namespace Mission3
             gameBoard[1] = new char[] { '4', '5', '6' };
             gameBoard[2] = new char[] { '7', '8', '9' };
 
-            var state = BoardInfo.CheckWin();
+            var state = BoardInfo.CheckWin(gameBoard);
 
             while (state == GameState.NoWinner)
             {
