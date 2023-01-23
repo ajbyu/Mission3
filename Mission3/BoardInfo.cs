@@ -18,7 +18,7 @@ namespace Mission3
             O,
             Cat
         }
-
+        
         /// <summary>
         /// Prints the game board given a jagged array of char[][]
         /// </summary>
@@ -41,7 +41,26 @@ namespace Mission3
 
         public static GameState CheckWin(char[][] gameBoard)
         {
-            return GameState.NoWinner;
+            GameState state = GameState.NoWinner;
+
+            //Check for 
+            foreach (var line in gameBoard)
+            {
+                char firstItem = line[0];
+                bool lineEqual = gameBoard[0]
+                    .Skip(1)
+                    .All(s => s.Equals(firstItem));
+
+                if (lineEqual)
+                {
+
+                }
+            }
+        }
+
+        private char DetermineWinner(char winner)
+        {
+            
         }
     }
 }

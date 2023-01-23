@@ -1,4 +1,5 @@
 ﻿using System;
+using static Mission3.BoardInfo;
 
 namespace Mission3
 {
@@ -16,7 +17,8 @@ namespace Mission3
 
 
             Console.WriteLine("Please enter the number to place the 'X': ");
-
+            var state = BoardInfo.CheckWin(gameBoard);
+            GameState state2 = BoardInfo.CheckWin(gameBoard);
         }
     }
 }
