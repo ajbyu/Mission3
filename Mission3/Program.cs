@@ -16,18 +16,7 @@ namespace Mission3
             gameBoard[2] = new char[] { 'O', 'X', 'O' };
 
             var state = BoardInfo.CheckWin(gameBoard);
-
-            while (state == GameState.NoWinner)
-            {
-                Console.WriteLine("Please enter the number to place the 'X': ");
-
-
-                if (state == GameState.NoWinner)
-                {
-                    Console.WriteLine("Please enter the number to place the 'O': ");
-                }
-                
-            }
+            Console.WriteLine(state);
             
 
         }
