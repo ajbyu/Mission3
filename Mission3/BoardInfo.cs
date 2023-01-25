@@ -165,7 +165,7 @@ namespace Mission3
             for (int i = 0; i < length; i++)
             {
                 diagonal1[i] = gameBoard[i][i];
-                diagonal2[i] = gameBoard[length - 1 - i][length - 1 - i];
+                diagonal2[i] = gameBoard[i][length - 1 - i];
             }
 
             //Check diagonal 1

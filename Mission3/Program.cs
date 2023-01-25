@@ -22,6 +22,7 @@ namespace Mission3
                 bool validInput = false;
                 while (validInput == false)
                 {
+                    Console.Clear();
                     BoardInfo.PrintBoard(gameBoard);
                     Console.WriteLine("Please enter the number to place the 'X': ");
                     string input = Console.ReadLine();
@@ -51,6 +52,7 @@ namespace Mission3
                     validInput = false;
                     while (validInput == false)
                     {
+                        Console.Clear();
                         BoardInfo.PrintBoard(gameBoard);
                         Console.WriteLine("Please enter the number to place the 'O': ");
                         string input = Console.ReadLine();
@@ -76,7 +78,20 @@ namespace Mission3
                 }
 
                 state = BoardInfo.CheckWin(gameBoard);
-                
+                if (state == GameState.X)
+                {
+                    Console.Clear();
+                    BoardInfo.PrintBoard(gameBoard);
+                    Console.Write("X Wins!\n\n");
+                    break;
+                }
+                else if (state == GameState.O)
+                {
+                    Console.Clear();
+                    BoardInfo.PrintBoard(gameBoard);
+                    Console.Write("O Wins!\n\n");
+                    break;
+                }
             }
             
 
